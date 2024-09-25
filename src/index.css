@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+.lay {
+  background: linear-gradient(-360deg, #1f1139, #246939, #1f1139, #246939);
+  background-size: 400% 400%;
+  background-repeat: no-repeat;
+  animation: gradient 15s ease infinite;
+}
+.layy {
+  background-color: rgba(68, 55, 146, 1);
+}
+svg {
+  color: green;
+}
+.bx-chevron-left,
+.bx-chevron-right {
+  font-size: 2rem;
+  color: purple;
+  margin: 2rem;
+  border: 1px solid gray;
+  padding: 1rem;
+  border-radius: 50%;
+}
+.bxl-instagram,
+.bxl-twitter,
+.bxl-facebook-circle,
+.bxl-linkedin-square {
+  font-size: 2rem;
+  color: purple;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+.bxl-linkedin-square {
+  background: rgba(0, 102, 153, 1);
+  color: white;
+}
+.bxl-twitter {
+  background-color: rgb(37, 167, 253);
+  color: white;
+}
+
+.bxl-facebook-circle {
+  color: white;
+  background: rgba(51, 127, 255, 1);
+}
+.bxl-instagram {
+  background: linear-gradient(
+    315deg,
+    #fbe18a 0.96%,
+    #fcbb45 21.96%,
+    #f75274 38.96%,
+    #d53692 52.96%,
+    #8f39ce 74.96%,
+    #5b4fe9 100.96%
+  );
+  color: white;
+}
+.bx-menu {
+  margin: 0;
+  padding: 0.5rem;
+  background-color: white;
+  color: purple;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+/* .slider {
+  div {
+    border: 1px solid black;
+  }
+} */
