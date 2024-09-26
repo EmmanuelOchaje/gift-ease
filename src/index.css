@@ -13,6 +13,9 @@ body {
   font-family: Arial, sans-serif;
   height: 100vh;
 }
+.bgcl {
+  background-color: (68, 55, 146, 1);
+}
 .lay {
   background: linear-gradient(-360deg, #1f1139, #246939, #1f1139, #246939);
   background-size: 400% 400%;

@@ -1,5 +1,6 @@
 import { useState } from "react";
-import logo from "../assets/images/logo.png";
+import logo from "../../assets/images/logo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -8,7 +9,7 @@ const Navbar = () => {
     return setShowMenu(!showMenu);
   }
   return (
-    <div className="flex relative justify-between h-[95px]">
+    <div className="flex justify-between static h-[95px]">
       <div>
         <img src={logo} alt="/" className="w-[80px] h-[80px] mt-2 ml-9" />
       </div>
@@ -23,25 +24,40 @@ const Navbar = () => {
 
       <div className=" py-5 md:flex hidden pr-9 ">
         <button className="m-2 font-semibold cursor-pointer">Login</button>
-        <button className="m-2 bg-white cursor-pointer rounded text-blue-900 font-semibold p-2">
-          Create Account
-        </button>
+        <Link to="/creaccount">
+          <button className="m-2 bg-white cursor-pointer rounded text-blue-900 font-semibold p-2">
+            Create Account
+          </button>
+        </Link>
       </div>
 
-      <div className="md:hidden float-right mt-8 mr-9" onClick={() => menu()}>
+      <div
+        className="md:hidden float-right mt-8 mr-9"
+        onClick={() => setShowMenu(true)}
+      >
         <i class="bx bx-menu"></i>
       </div>
 
       {/* overlay */}
-      {/* <div className="bg-black/50 fixed w-full h-screen z-10 top-[95px] left-0"></div> */}
+      {showMenu ? (
+        <div
+          className="bg-black/50 fixed w-full h-screen z-10 top-[0px] left-0"
+          onClick={() => menu()}
+        ></div>
+      ) : (
+        ""
+      )}
 
       <div
         className={
           showMenu
-            ? "w-full bg-green-700 top-[95px] lg:w-[500px] right-0 h-screen z-10 fixed duration-300"
-            : "w-full bg-green-700 top-[95px] lg:w-[500px] right-[-100%] h-screen z-10 fixed duration-300"
+            ? "w-[400px] bg-purple-900 top-[0px] lg:w-[500px] right-0 h-screen z-10 fixed duration-300"
+            : "w-[400px] bg-purple-900 top-[0px] lg:w-[500px] right-[-100%] h-screen z-10 fixed duration-300"
         }
       >
+        <div className="float-right mr-10 mt-5 text-3xl" onClick={() => menu()}>
+          <i class="bx bx-x"></i>
+        </div>
         <ul className="ml-auto mt-20 mr-auto text-center">
           <li className="m-10">Product</li>
           <li className="m-10">Our Partners</li>

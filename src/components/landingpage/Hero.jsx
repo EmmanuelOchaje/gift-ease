@@ -1,4 +1,4 @@
-import image1 from "../assets/images/Frame 1000004308.png";
+import image1 from "../../assets/images/Frame 1000004308.png";
 
 const Hero = () => {
   return (

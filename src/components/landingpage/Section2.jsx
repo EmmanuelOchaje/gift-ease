@@ -1,4 +1,4 @@
-import image from "../assets/images/Frame 10.png";
+import image from "../../assets/images/Frame 10.png";
 
 const Section2 = () => {
   return (

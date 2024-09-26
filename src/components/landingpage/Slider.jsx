@@ -1,6 +1,7 @@
 //
 import { useState } from "react";
-import avatar from "../assets/images/Avatar Image.png";
+
+import avatar from "../../assets/images/Avatar Image.png";
 
 const slide = [
   {
