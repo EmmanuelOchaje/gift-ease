@@ -35,7 +35,7 @@ const Slider = () => {
   }
   return (
     <div className="mt-10 slider">
-      <h2 className="text-purple-900 text-center font-bold text-2xl lg:text-3xl">
+      <h2 className="cl text-center font-bold text-2xl lg:text-3xl">
         DON'T TAKE OUR WORD FOR IT. TRUST OUR CUSTOMERS.
       </h2>
 
@@ -44,7 +44,7 @@ const Slider = () => {
           <i class="bx bx-chevron-left"></i>
         </button>
         <div className="lg:w-[700px] mt-10 ">
-          <p className="text-purple-950 text-center items-center">
+          <p className="cl text-center items-center">
             “ {slide[step - 1].word} ”
           </p>
           <div className="my-10">
@@ -63,21 +63,21 @@ const Slider = () => {
               <button
                 className={
                   step === 1
-                    ? "bg-purple-900 cursor-pointer  rounded-full h-3 w-3 m-2"
+                    ? "bgcl cursor-pointer  rounded-full h-3 w-3 m-2"
                     : "bg-black/10 cursor-pointer rounded-full h-3 w-3 m-2"
                 }
               ></button>
               <button
                 className={
                   step === 2
-                    ? "bg-purple-900 cursor-pointer  rounded-full h-3 w-3 m-2"
+                    ? "bgcl cursor-pointer  rounded-full h-3 w-3 m-2"
                     : "bg-black/10 cursor-pointer rounded-full h-3 w-3 m-2"
                 }
               ></button>
               <button
                 className={
                   step === 3
-                    ? "bg-purple-900 cursor-pointer  rounded-full h-3 w-3 m-2"
+                    ? "bgcl cursor-pointer  rounded-full h-3 w-3 m-2"
                     : "bg-black/10 cursor-pointer rounded-full h-3 w-3 m-2"
                 }
               ></button>

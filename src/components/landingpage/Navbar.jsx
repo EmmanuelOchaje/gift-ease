@@ -16,16 +16,20 @@ const Navbar = () => {
 
       <div className="font-semibold md:flex hidden py-5">
         <ul className="flex pt-4 ml-20 ">
-          <li className="mr-5 cursor-pointer">Product</li>
-          <li className="mr-5 cursor-pointer">Our Partners</li>
-          <li className="mr-5 cursor-pointer">Market Place</li>
+          <li className="mr-5 cursor-pointer text-white">Product</li>
+          <li className="mr-5 cursor-pointer text-white">Our Partners</li>
+          <li className="mr-5 cursor-pointer text-white">
+            <Link to="/marketplacepage">Market Place</Link>
+          </li>
         </ul>
       </div>
 
       <div className=" py-5 md:flex hidden pr-9 ">
-        <button className="m-2 font-semibold cursor-pointer">Login</button>
-        <Link to="/creaccount">
-          <button className="m-2 bg-white cursor-pointer rounded text-blue-900 font-semibold p-2">
+        <button className="m-2 font-semibold cursor-pointer text-white">
+          <Link to="/adminloginpage">Log In</Link>
+        </button>
+        <Link to="/createaccountpage">
+          <button className="m-2 bg-white cursor-pointer rounded text-[#443792] font-semibold p-2">
             Create Account
           </button>
         </Link>
@@ -51,19 +55,22 @@ const Navbar = () => {
       <div
         className={
           showMenu
-            ? "w-[400px] bg-purple-900 top-[0px] lg:w-[500px] right-0 h-screen z-10 fixed duration-300"
-            : "w-[400px] bg-purple-900 top-[0px] lg:w-[500px] right-[-100%] h-screen z-10 fixed duration-300"
+            ? "w-[400px] bgcl top-[0px] lg:w-[500px] right-0 h-screen z-10 fixed duration-300"
+            : "w-[400px] bgcl top-[0px] lg:w-[500px] right-[-100%] h-screen z-10 fixed duration-300"
         }
       >
-        <div className="float-right mr-10 mt-5 text-3xl" onClick={() => menu()}>
+        <div
+          className="float-right text-white mr-10 mt-5 text-3xl"
+          onClick={() => menu()}
+        >
           <i class="bx bx-x"></i>
         </div>
         <ul className="ml-auto mt-20 mr-auto text-center">
-          <li className="m-10">Product</li>
-          <li className="m-10">Our Partners</li>
-          <li className="m-10">Market Place</li>
-          <li className="m-10">Login</li>
-          <li className="m-10">Create Account</li>
+          <li className="m-10 text-white">Product</li>
+          <li className="m-10 text-white">Our Partners</li>
+          <li className="m-10 text-white">Market Place</li>
+          <li className="m-10 text-white">Login</li>
+          <li className="m-10 text-white">Create Account</li>
         </ul>
       </div>
     </div>

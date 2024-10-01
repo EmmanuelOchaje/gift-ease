@@ -1,22 +1,23 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-/* import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Section2 from "./components/Section2";
-import Slider from "./components/Slider";
-import Hiw from "./Hiw";
-import Section3 from "./Section3"; */
 import "./index.css";
 import LandingPage from "./pages/LandingPage";
-import CreAccount from "./pages/CreAccount";
+import CreAccountPage from "./pages/CreAccountPage";
+import AdminLoginPage from "./pages/AdminLoginPage";
+import ForgotPwdPage from "./pages/ForgotPwdPage";
+import MarketPlacePage from "./pages/MarketPlacePage";
+// import Loader from "./components/Loader/Loader";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* <Route path="/" element={<LandingPage />} /> */}
+        <Route path="/" element={<LandingPage />} />
+        {/* <Route path="/" element={<Loader />} /> */}
         {/* <Route path="creaccount" element={<CreAccount />} /> */}
-        <Route path="/" element={<CreAccount />} />
+        <Route path="createaccountpage" element={<CreAccountPage />} />
+        <Route path="adminloginpage" element={<AdminLoginPage />} />
+        <Route path="forgotpwdpage" element={<ForgotPwdPage />} />
+        <Route path="marketplacepage" element={<MarketPlacePage />} />
       </Routes>
     </BrowserRouter>
   );

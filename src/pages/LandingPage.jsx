@@ -3,7 +3,7 @@ import Hero from "../components/landingpage/Hero";
 import Navbar from "../components/landingpage/Navbar";
 import Section2 from "../components/landingpage/Section2";
 import Slider from "../components/landingpage/Slider";
-import Hiw from "../Hiw";
+import Hiw from "../components/landingpage/Hiw";
 import Section3 from "../Section3";
 
 const LandingPage = () => {

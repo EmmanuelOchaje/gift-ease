@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "img": "../../assets/images/chickenRepublic.png",
+      "name": "Chicken Republic",
+      "text": "Enjoy the very best of dining experience with mouth watering yet affordable meal options from continental cuisines to the best of local dishes",
+      "cat": "Restaurant"
+    },
+    {
+      "img": "../../assets/images/sweetSensation.png",
+      "name": "Sweet Sensation",
+      "text": "Enjoy the very best of dining experience with mouth watering yet affordable meal options from continental cuisines to the best of local dishes",
+      "cat": "Restaurant"
+    },
+    {
+      "img": "../../assets/images/thePlace.png",
+      "name": "The Place",
+      "text": "Enjoy the very best of dining experience with mouth watering yet affordable meal options from continental cuisines to the best of local dishes",
+      "cat": "Restaurant"
+    },
+    {
+      "img": "../../assets/images/chickenRepublic.png",
+      "name": "Chicken Republic",
+      "text": "Enjoy the very best of dining experience with mouth watering yet affordable meal options from continental cuisines to the best of local dishes",
+      "cat": "Restaurant"
+    },
+    {
+      "img": "../../assets/images/sweetSensation.png",
+      "name": "Sweet Sensation",
+      "text": "Enjoy the very best of dining experience with mouth watering yet affordable meal options from continental cuisines to the best of local dishes",
+      "cat": "Restaurant"
+    },
+    {
+      "img": "../../assets/images/thePlace.png",
+      "name": "The Place",
+      "text": "Enjoy the very best of dining experience with mouth watering yet affordable meal options from continental cuisines to the best of local dishes",
+      "cat": "Restaurant"
+    }
+  ]
+}

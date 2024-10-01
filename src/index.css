@@ -5,7 +5,7 @@
 * {
   margin: 0;
   font-family: "Raleway", sans-serif;
-  color: white;
+  /* color: white; */
 }
 body {
   margin: 0;
@@ -14,7 +14,10 @@ body {
   height: 100vh;
 }
 .bgcl {
-  background-color: (68, 55, 146, 1);
+  background-color: rgba(68, 55, 146, 1);
+}
+.cl {
+  color: rgba(68, 55, 146, 1);
 }
 .lay {
   background: linear-gradient(-360deg, #1f1139, #246939, #1f1139, #246939);
@@ -80,8 +83,42 @@ svg {
   font-size: 2rem;
   border-radius: 10px;
 }
-/* .slider {
-  div {
-    border: 1px solid black;
+input {
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  &:focus {
+    outline: 1px solid rgb(196, 196, 196);
   }
-} */
+}
+/* div {
+  border: 1px solid black;
+}
+ */
+.chck {
+  outline: transparent;
+  accent-color: rgba(68, 55, 146, 1);
+  margin-right: 0.5rem;
+  &:focus {
+    outline: transparent;
+    background-color: #1f1139;
+  }
+}
+
+.cont {
+  background-color: rgb(230, 230, 230);
+}
+.inpt {
+  border: 1px solid transparent;
+  &:focus {
+    outline: 1px solid rgb(196, 196, 196);
+  }
+  border-radius: 5px;
+}
+.srch {
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  border-left: 1px solid #b3b3b3;
+  &:focus {
+    outline: none;
+  }
+}
