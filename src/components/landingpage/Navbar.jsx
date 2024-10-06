@@ -29,7 +29,7 @@ const Navbar = () => {
           <Link to="/adminloginpage">Log In</Link>
         </button>
         <Link to="/createaccountpage">
-          <button className="m-2 bg-white cursor-pointer rounded text-[#443792] font-semibold p-2">
+          <button className="m-2 bg-white cursor-pointer rounded-lg text-[#443792] font-semibold p-2">
             Create Account
           </button>
         </Link>
@@ -55,8 +55,8 @@ const Navbar = () => {
       <div
         className={
           showMenu
-            ? "w-[400px] bgcl top-[0px] lg:w-[500px] right-0 h-screen z-10 fixed duration-300"
-            : "w-[400px] bgcl top-[0px] lg:w-[500px] right-[-100%] h-screen z-10 fixed duration-300"
+            ? "w-[70%] bgcl top-[0px] lg:w-[500px] right-0 h-screen z-10 fixed duration-300"
+            : "w-[70%] bgcl top-[0px] lg:w-[500px] right-[-100%] h-screen z-10 fixed duration-300"
         }
       >
         <div
