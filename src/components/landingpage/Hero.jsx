@@ -18,10 +18,10 @@ const Hero = () => {
         to your team's needs.
       </p>
       <div className="text-center">
-        <button className="rounded border-white bg-white text-blue-900 font-semibold p-2 m-2 cursor-pointer">
+        <button className="rounded-lg border-white bg-white text-blue-900 font-semibold p-2 m-2 cursor-pointer">
           Get Started
         </button>
-        <button className="border rounded bg-transparent text-white border-white font-semibold p-2 cursor-pointer m-2">
+        <button className="border rounded-lg bg-transparent text-white border-white font-semibold p-2 cursor-pointer m-2">
           <Link to="/marketplacepage">Explore Marketplace</Link>
         </button>
       </div>
